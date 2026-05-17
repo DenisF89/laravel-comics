@@ -1,0 +1,123 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
+}
+
+main {
+    flex-grow: 1;
+    background-color: black;
+}
+
+main h4 {
+    background-color: rgb(0, 94, 255);
+    color: white;
+    padding: 8px 16px;
+    position: absolute;
+    top: -16px;
+    font-size:16px;
+    font-weight: bold;
+}
+
+.boxed_main{
+    padding: 50px 10px;
+    flex-direction: column;
+    position: relative;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,ol {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:#cecece;
+}
+
+.nav-link-custom {
+    color: black;
+    font-weight: 600;
+}
+
+.active {
+    color: blue;
+    border-bottom: 2px solid blue;
+}
+
+.logo{
+    width: 80px;
+}
+
+.hero {
+    background-image: url("../img/jumbotron.jpg");
+    height: 350px;
+    background-size: cover;
+}
+
+.boxed {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.blu-menu{
+    background-color: #0282f9;
+    height: 130px;;
+    color: white;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.footer-top{
+    background-image: url("../img/footer-bg.jpg");
+    background-size: cover;
+}
+.footer-bottom{
+    background-color: rgb(48, 48, 48);
+    color: white;
+    padding: 20px 0;
+}
+.footer-menu{
+    color:white;
+    padding: 20px 10px 30px;
+}
+.footer-menu h5{
+    padding: 20px 0 0;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.dc-big-logo{
+    width: 150px;
+    height: auto;
+    background-image: url("../img/dc-logo-bg.png");
+    background-size: cover;
+    background-position: center;
+    
+}
+.btn-custom{
+    background-color: transparent;
+    border: 2px solid #0282f9;
+    color: white;
+}
+
+
