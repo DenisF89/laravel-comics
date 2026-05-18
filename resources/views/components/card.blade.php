@@ -1,11 +1,14 @@
-<div class="card">
+{{-- Componente card con la sua struttura html.
+Posso utilizzare le variabili passate al componente card tramite attributi: $titolo, $thumb e $index. --}}
 
-    <img src="{{ $thumb }}" alt="{{ $titolo }}" class="card-img-top">
+<div class="card h-100">
+    <a  href="{{ route('comic', ['id' => $index]) }}"       {{-- link alla pagina comic, con passaggio dell'id tramite parametro --}}
+        class="text-decoration-none text-reset">
 
-    <div class="card-body">
-        <h3>{{ $titolo }}</h3>
+        <img src="{{ $thumb }}" alt="{{ $titolo }}" class="card-img-top img-custom">
 
-        <p>{{ $slot }}</p>
-    </div>
-
+        <div class="card-body">
+            <h5>{{ $titolo }}</h5>
+        </div>
+    </a>
 </div>

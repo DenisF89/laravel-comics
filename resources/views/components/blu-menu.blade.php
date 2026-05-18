@@ -12,7 +12,7 @@
 
 <div class="blu-menu d-flex align-items-center justify-content-center">
     
-        <ul class="d-flex align-items-center gap-5 ">
+        <ul class="d-flex align-items-center gap-5 p-2 flex-wrap ">
             @foreach ($links as $link)
                 <li>
                         <a href="{{ $link['href'] }}" class="d-flex align-items-center">
